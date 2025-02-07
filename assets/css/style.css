@@ -1,0 +1,440 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --nav-height: 50px;
+  --color-white: #f8fdfd;
+  --color-black: #1f1f1f;
+  --color-blue: #0033cf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.btn > a {
+  border: 2px solid var(--color-black);
+  min-width: 95px;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  box-shadow: 2px 2px var(--color-blue);
+  text-align: center;
+}
+
+body {
+  background: url(../img/background/back1.jpg) center / cover no-repeat;
+}
+/* Begin: Header */
+#header {
+  height: var(--nav-height);
+  width: 100%;
+  padding: 0 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  background-color: var(--color-black);
+  color: #ffffff;
+  z-index: 100;
+}
+
+#header .logo i {
+  font-size: 30px;
+}
+
+#navbar > li {
+  display: inline-block;
+}
+
+#navbar li a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#navbar li:hover > a {
+  color: var(--color-blue);
+}
+
+#navbar li .contact {
+  padding-right: 0;
+}
+
+.btn-container {
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* End: Header */
+
+/* Begin: Banner */
+#banner {
+  margin-top: var(--nav-height);
+  width: 100%;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .banner-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 20px;
+  align-items: center;
+  border-radius: 0 200px 200px 0;
+  color: var(--color-black);
+}
+
+/* Biography container */
+#banner .bio-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 60px 0 0;
+  margin: 0 60px;
+  color: var(--color-white);
+  border-right: 2px solid var(--color-white);
+}
+
+#banner .bio-title {
+  text-transform: uppercase;
+}
+
+#banner .bio-title::first-letter {
+  font-size: 80px;
+  color: var(--color-blue);
+  text-shadow: 8px -8px var(--color-white);
+}
+
+#banner .bio-container .btn {
+  padding: 20px 0;
+}
+
+.bio-container .btn > a {
+  border: 1px solid white;
+  box-shadow: none;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.btn a:hover {
+  background-color: transparent;
+  color: var(--color-white);
+}
+
+/* Image container */
+#banner .profile-container {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: -10px;
+}
+
+#banner .profile-container::before {
+  content: "";
+  position: absolute;
+  background: url(../img/logo/logo.png) center / contain;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+  width: 100px;
+  height: 100px;
+  bottom: 4px;
+  z-index: 1;
+}
+
+#banner img {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 85%;
+  height: 95%;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
+
+#banner .banner-container p {
+  text-align: justify;
+  line-height: 1.6;
+}
+/* End: Banner */
+
+/* Begin: Section 1 */
+#section-one {
+  width: 100%;
+  padding: 70px 140px;
+  box-shadow: 0px 0px 16px 4px var(--color-black);
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  box-shadow: 25px 25px 0px -10px var(--color-blue),
+    -25px -25px 0px -10px rgba(0, 0, 0, 0.7);
+  background-color: var(--color-white);
+}
+
+#about .info {
+  border-top: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+  border-left: 2px solid var(--color-black);
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .info > h2 {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 20px 0 10px 0;
+}
+
+#about .info > p {
+  border-top: 2px solid var(--color-black);
+  word-spacing: -1px;
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 10px;
+  padding-top: 30px;
+}
+
+#about .info > .school-logo {
+  width: 60px;
+  height: 60px;
+  margin: 20px 0px;
+}
+
+.info .school-logo > img {
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#about .entertainment {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--color-black);
+}
+
+.entertainment .hobby {
+  border-bottom: 2px solid var(--color-black);
+}
+
+.entertainment .hobby,
+.entertainment .movie-music {
+  padding: 20px;
+  min-width: 350px;
+}
+
+.hobby > h3,
+.movie-music > h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hobby ul,
+.movie-music ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobby ul > Li,
+.movie-music ul > li {
+  padding: 10px 10px;
+  margin: 10px;
+  list-style: none;
+}
+
+.entertainment .btn:hover > a {
+  background-color: var(--color-blue);
+  box-shadow: 2px 2px var(--color-white);
+}
+
+/* End: Section 1 */
+
+/* Begin: Section 2 */
+#section-two {
+  width: 100%;
+  padding: 40px 80px;
+}
+#quote {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 80px;
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#quote .quotation {
+  line-height: 1.8;
+  font-style: italic;
+  text-align: justify;
+}
+
+#quote .author {
+  text-align: right;
+  font-size: 16px;
+}
+/* End: Section 2 */
+
+/* Begin: Table */
+#section-three {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 40px 100px;
+  box-shadow: 0px 0px 16px 4px var(--color-black);
+}
+
+#section-three #project {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.table {
+  width: 100%;
+  font-size: 16px;
+  border: 2px solid var(--color-black);
+  background-color: var(--color-white);
+  border-collapse: collapse;
+  box-shadow: -25px 25px 0px -10px rgba(0, 0, 0, 0.7);
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+.table tr > th {
+  text-transform: uppercase;
+}
+
+.table td > a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.table .table-title {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.table .even {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.table-highlight:hover {
+  background-color: var(--color-blue);
+}
+
+.table-highlight:hover > a {
+  color: var(--color-white);
+}
+
+/* End: Table */
+#project #education {
+  border: 1px solid var(--color-black);
+  background-color: var(--color-white);
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 25px -25px 0px -10px rgba(0, 0, 0, 0.7);
+}
+
+#education .program-language,
+#education .job {
+  border: 1px solid var(--color-black);
+}
+
+#education .program-language {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program-language > h3,
+.job > h3 {
+  font-size: 16px;
+}
+
+.program-language > ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.program-language ul > li {
+  list-style: none;
+  margin: 10px;
+}
+
+.program-language .btn > a {
+  box-shadow: 2px 2px var(--color-black);
+  font-size: 12px;
+}
+
+.program-language .btn:hover > a {
+  box-shadow: 2px 2pxvar (--color-blue);
+  color: var(--color-blue);
+}
+
+#education .job {
+  height: 100%;
+  padding: 10px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.job > h3 {
+  margin: 10px;
+}
+
+.job li > ol {
+  list-style: lower-roman;
+}
+
+.job .school-list,
+.school-list ul,
+.job .job-list,
+.job-list ol {
+  margin: 0px 0 0 50px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+}
